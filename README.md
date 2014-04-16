@@ -30,7 +30,7 @@ pip install git+git://github.com/exaroth/mdx_custom_span_class.git
 import markdown
 
 md = markdown.Markdown(extensions=["custom_span_class"])
-md.convert("I love !!text-danger|span!!")
+md.convert("I love !!text-danger|spam!!")
 
 ```
 
