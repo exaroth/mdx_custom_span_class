@@ -4,7 +4,7 @@
 This is a simple extension for Python-Markdown library, which allows adding span elements with custom class.
 The syntax is:
 ```
-!!<class name>|text!!
+!!<class name>|<text to be wrapped>!!
 ```
 For instance:
 
@@ -14,7 +14,7 @@ I love !!text-alert|spam!!
 will return
 
 ```html
-I love <span class="text-alert">spam</span>
+<p>I love <span class="text-alert">spam</span></p>
 ```
 
 
