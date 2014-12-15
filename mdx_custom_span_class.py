@@ -60,8 +60,8 @@ class CustomSpanClassPattern(Pattern):
         elem.text = markdown.util.AtomicString(text)
         return elem
 
-def makeExtension(configs=None):
-    return CustomSpanClassExtension(configs=configs)
+def makeExtension(*args, **kwargs):
+    return CustomSpanClassExtension(*args, **kwargs)
 
 if __name__ == "__main__":
     import doctest
