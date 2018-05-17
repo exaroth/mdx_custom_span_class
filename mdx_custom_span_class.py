@@ -33,7 +33,7 @@ from markdown.preprocessors import Preprocessor
 from markdown.inlinepatterns import Pattern
 
 
-CUSTOM_CLS_RE = r'[!]{2}(?P<class>.+)[|](?P<text>.+)[!]{2}'
+CUSTOM_CLS_RE = r'[!]{2}(?P<class>[^!]+)[|](?P<text>[^!]+)[!]{2}'
 
 
 class CustomSpanClassExtension(Extension):
